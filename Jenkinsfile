@@ -19,7 +19,7 @@ pipeline {
         BATCH_SCRIPT_NAME = "carmaker_${PROJECT_NAME}.bat"
         TCL_SCRIPT_NAME = 'CMGUI_RemCtrl.tcl'
         MODELCHECK_PATH = "${WORKSPACE}\\ModelCheck"
-        PROJECT_NAME = 'Frg-Bedatung_Cayenne_E4_CM12'
+        PROJECT_NAME = 'FzgBed_Panamera_G3_PVS_CM12'
     }
 
     stages {
