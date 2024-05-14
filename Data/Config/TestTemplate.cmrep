@@ -1,0 +1,90 @@
+#INFOFILE1.1 (UTF-8) - Do not remove this line!
+FileIdent = CarMaker-ReportTemplate 1.0
+FileCreator = CarMaker 12.0.2
+Description:
+## General ################################################
+General.AppendDate = 0
+General.FName = SimOutput/engpmaknb022/Report.pdf
+General.Format = pdf
+## Content ################################################
+Content.Author =
+Content.Coverage = all
+Content.Notes =
+Content.Title = CarMaker Test Report
+Overview = 1
+Overview.Appl = 1
+Overview.Info = 1
+Overview.Notes = 1
+Overview.TS = 1
+Summary = 1
+Summary.Analyse = 1
+Summary.List = 1
+Details = 1
+Details.Characteristics = 1
+Details.Criteria = 1
+Details.Diagrams = 1
+Details.Infos = 1
+Details.Man = 1
+Details.ResFName = 1
+Details.Settings = 1
+Details.TR = 1
+Details.TestLog = 1
+Details.UserParams = 1
+## Document ###############################################
+Document.Height = 297
+Document.MarginBottom = 10
+Document.MarginLeft = 15
+Document.MarginRight = 15
+Document.MarginTop = 10
+Document.Orient = portrait
+Document.Size = A4
+Document.Width = 210
+## Layout #################################################
+Layout.ColBd = 0.00 0.00 0.00
+Layout.ColBg1 = 0.91 0.93 0.97
+Layout.ColBg2 = 1.00 1.00 1.00
+Layout.ColCap = 0.00 0.38 0.66
+Layout.ColHdr = 0.81 0.85 0.93
+Layout.ColLnk = 0.00 0.00 1.00
+Layout.ColTxt = 0.00 0.00 0.00
+Layout.DiagSize = small
+Layout.FSize = 10
+Layout.Font = Helvetica
+Layout.FtrBg = 1.00 1.00 1.00
+Layout.FtrHeight = 4
+Layout.FtrPageNo = 1
+Layout.FtrPageNoPos = right
+Layout.HdrBg = 1.00 1.00 1.00
+Layout.HdrHeight = 9
+Layout.HdrPageNo = 0
+Layout.HdrPageNoPos = right
+Layout.HdrTitle = 1
+Layout.HdrTitlePos = left
+Layout.Script:
+	# -----------------------------------------------------------------------------
+	# Example script for report page template
+	# Copyright (c) IPG Automotive GmbH, Karlsruhe, Germany (www.ipg-automotive.com)
+	# -----------------------------------------------------------------------------
+	""
+	# color definitions used below (triples of red/green/blue)
+	set grey {0.855 0.855 0.855}
+	""
+	# the following commands are provided, coordinates are absolute values meassured
+	# in milimeters starting in the upper-left corner of the page:
+	""
+	# Polygon x1 y1 x2 y2 ... xn yn linewidth linecolor fillcolor
+	# Rectangle x y width height linewidth linecolor fillcolor
+	# Circle x y radius linewidth linecolor fillcolor
+	# Image x y width height imagepath (absolute or relative to project dir)
+	# Text x y font fontsize fontcolor string
+	""
+	# top of page:
+	Rectangle 0 20 210 0.25 0 $grey $grey
+	Image 162 7.5 33 11 "IPG_Logo.png"
+	""
+	# bottom of page:
+	""
+	Rectangle 0 281 210 0.25 0 $grey $grey
+	""
+Layout.ScriptEnabled = 1
+## End of file ############################################
